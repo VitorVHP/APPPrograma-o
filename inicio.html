@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" required>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <p>Não tem uma conta? <a href="registro.html">Cadastre-se</a></p>
+    </div>
+    
+    <div id="menu" class="hidden">
+        <h2>Menu</h2>
+        <ul id="menuOptions"></ul>
+        <button onclick="logout()">Sair</button>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
